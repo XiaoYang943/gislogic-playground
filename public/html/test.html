@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenLayers Example</title>
+    <!-- 定义模块的映射关系 -->
+
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <script type="importmap">
+            {
+                "imports": {
+                    "ol": "https://cdn.jsdelivr.net/npm/ol@9.1.0/+esm",
+                    "vue":"https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.esm.browser.js"
+                }
+            }
+        </script>
+    <script type="module">
+    import Map from 'https://cdn.jsdelivr.net/npm/ol/ol.esm.js';
+    console.log("Map",Map)
+        import Vue from 'vue'
+        import Ol from 'ol'
+        console.log("ol",ol)
+         console.log("Vue",Vue)
+//         import Map from 'ol/Map';
+//         import View from 'ol/View';
+//         import TileLayer from 'ol/layer/Tile';
+//         import OSM from 'ol/source/OSM';
+//
+//         const map = new Map({
+//             target: 'map',
+//             layers: [
+//                 new TileLayer({
+//                     source: new OSM()
+//                 })
+//             ],
+//             view: new View({
+//                 center: [0, 0],
+//                 zoom: 2
+//             })
+//         });
+    </script>
+</body>
+</html>
